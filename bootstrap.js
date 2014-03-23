@@ -743,7 +743,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
-  "FirstSenchaAppAndre.view.Main": []
+  "FirstSenchaAppAndre.view.Main": [],
+  "FirstSenchaAppAndre.view.PollView": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractComponent": [],
@@ -1689,5 +1690,8 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.WindowsPhone": [],
   "FirstSenchaAppAndre.view.Main": [
     "widget.main"
+  ],
+  "FirstSenchaAppAndre.view.PollView": [
+    "widget.pollview"
   ]
 });

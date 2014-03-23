@@ -2,8 +2,7 @@ Ext.define('FirstSenchaAppAndre.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.TitleBar','Ext.Carousel','Ext.dataview.List', 'FirstSenchaAppAndre.view.PollView'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -19,32 +18,83 @@ Ext.define('FirstSenchaAppAndre.view.Main', {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+                    title: 'Andre Ticona\'s First Sencha App'
                 },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
+                style: {
+                	background: 'white'}
+                ,
+                	html: [
+                    "Welcome. The theme for my fisrt Sencha App is the recent draw for UEFA Champions League Quarter finals. I made use of Sencha UI tools to show images, lists and forms. Enjoy!."
                 ].join("")
             },
+            
             {
-                title: 'Get Started',
-                iconCls: 'action',
+                title: 'Pictures',
+                iconCls: 'star',
+                xtype: 'carousel',
+                direction: 'horizontal',
+                defaults: {
+                    xtype: 'tabpanel',
+                    styleHtmlContent: true
+                },
+                items:[
+               
+                 {
+                	html: '<div style:"align:center"><p>The Draw</p>'+ '<div style="width:' 
+                    + window.innerWidth 
+                    + 'px;height:' + 'px;"><img src=' 
+                         +  
+                   'resources/images/uefacl1.jpg'
+                    + ' style="width: 30%;height: 30%;" /></div></div>'
+                 },
+                 {
+                	 html: '<div style:"align:center"><p>The Stadium</p>'+ '<div style="width:' 
+                     + window.innerWidth 
+                     + 'px;height:' + 'px;"><img src=' 
+                          +  
+                    'resources/images/uefacl2.jpg'
+                     + ' style="width: 30%;height: 30%;" /></div></div>'
+                 }
+                 ,
+                 {
+                	 html: '<div style:"align:center"><p>The Prize</p>'+ '<div style="width:' 
+                     + window.innerWidth 
+                     + 'px;height:' + 'px;"><img src=' 
+                          +  
+                    'resources/images/uefacl3.jpg'
+                     + ' style="width: 30%;height: 30%;" /></div></div>'
+                 }
+                 ]
+                
+            },
 
-                items: [
-                    {
-                        docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Getting Started'
-                    },
-                    {
-                        xtype: 'video',
-                        url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-                        posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
-                    }
-                ]
+            {
+                title: 'Schedule',
+                iconCls: 'time',
+                xtype   : 'list',
+                itemTpl : '{title}',
+                    data    : [
+                        { title : 'FC Barcelona vs Atletico Madrid: 1 April 2014' },
+                        { title : 'Real Madrid FC vs Borussia Dortmund: 1 April 2014' },
+                        { title : 'Paris Saint Germain vs Chelsea FC: 2 April 2014' },
+                        { title : 'Manchester United FC vs FC Bayern Munchen: 2 April 2014' }
+                    ],
+                    items   : [
+                        {
+                            xtype  : 'titlebar',
+                            title  : 'Schedule',
+                            docked : 'top',
+                        }
+                    ]
+                
+                	
+            },
+                        {
+                title: 'Poll',
+                iconCls: 'info',
+                xtype: 'pollview'
             }
+            
         ]
     }
 });

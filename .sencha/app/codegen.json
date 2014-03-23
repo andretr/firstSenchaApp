@@ -35,6 +35,9 @@
     },
     "app.js.tpl.merge": {
       "bf7e5518d2efd28e0a64077e1e7666428cf994ae": "eJx1VdtuEzEQfc9XjILQblDkpCEtEFRxKTxEAlRxkxDiwV1PErdee/GlSajCtzP2ZnMhiR/2NnPOzBx7Zh8ey7Iy1l/z4o5PMS9MyRzqYsZZ8FJ1Hq96T1pA6+tMOphIhUD3KWq03KMArgWESqTnmyV8SVC4KgWDHyZAwTWgkB78Bs5d4tOIgjATY2FpggVeVUoW3Euju3ATIgIdJrCDuVQKZvwewRu4QSjRTlPARLUNCvMZaqBwFVpiLh0URmCTLlGD5+7OgQvFjBLZGPSU8pknspIAynUJqL01SqF1QDneS5y7VG0KYYPWEdWutYrZkwxTywW2WSsRjQVypZZAZj1FFzPfijA3QYlYiZKlbHQsjfNksXdbszAaE5vUYEgRC5XiBbHlTQlX2zw7DMaTXTVIfW18rVZSOVE1CcWQUdztZkaxulG+pHdljQgFbRi0awaSZEJ75NtUCPeRMPEl57idsUSLzijap5LrEMtnrSe9Vuv9wrOdDc4f6iPASxxB9kCWT/S4yrq1chZ/B0lEI/iZ3uPKIsVHdI4O6VuzyJLh1xqQNmfP+yOXet9HUvYjeNi6nD/LKHjMN1hStBcdXG9MV1bpKeWy8Xw2OOX5V1Zc/O9+djY85f96sDjwHp70TuwNJCFWTTEu2q8tUrtWxqEYgbcB11bnufWhGpek1V7JTwf9xfCivx9v7d1bG9lttZffxbC/eDE4gVkbDwS7eL446/eHx0GN9QA1jN8Hp1Br64F+508vFoN+//lx2MZ8qPuLaBiewjXmQ/EVD9RhI5jQLZ3mzo7GvR68Q0cduYwDDB7R2f5guKBZMdYiHn+aJaiwRO03mHi0J2qZZ0ecsw4TNV/eednaDTPW0kuu5B9MkUo68akR9mi/04c43hkXIo8fCovU6vm26VjEsNQvHYqwW6jR3+rJfqLW1JJuyuJckLbMN4a42m+2/Q41T7u775F+KTtjgSa8g9tAQ5CGG22Gm4Q4QG+QBm7zj0lTlMYmvZDfPU09AjL4jIqEA23mr/6Lssmc/ine6LHYraBZcgIbO1xeXkK2RJcd84xrLrUwc6ZMnTazKXi+Vm93rVrH3xqhWyt6+geQsUAZ"
+    },
+    "{modelFileName}.js.tpl.merge": {
+      "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329": "eJxtUsFugzAMvfMVVqUqtEXQXaF0h2nX/QDikIJpo6UBkdAxRfn3ObCiVasPsbH9Hi923kcT19gIhSGz17ZG+cGvqDteoYutotixCGwAZDgaVHUKzJ64xjfJtabiVJqOqlWNOKe/3d4agbLWKRR2veS83bgcUMdzGXIIm0FVRrSKoim3+UOykLU9hDfeQ4+GMEUZQcd74/EzKNadFCZkEdtEICi9z8gd5q5YojqbSwa7nXjGPsvqoSHcBChEeSdM2SZ7CiAlcTfoS2jBjyqFptiTLPPdTfFLCe4J0gX/UkQ09Mq77LHoNuHDsP7Qrd3BdNKPJV/NxdXxAXsXxZY9zsKY9d4xcLYYhapxhDyHsWoHZeAVGAPqiVjpDgn94BjYNSRbOEmuPkHSSwHTktJ6qBCu2J9xWrwUFa3iKxk09oC1oI9tQhoXRWUw391P5AeOxqsQ"
     }
   },
   "targets": {
@@ -276,6 +279,18 @@
         "library": "core",
         "controllerNamespace": "FirstSenchaAppAndre.controller",
         "appStores": ""
+      }
+    },
+    "app/model/Schedule.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "b440abe61f1cfb3bbc31c9554696b4c7e9e2c329",
+      "parameters": {
+        "appName": "FirstSenchaAppAndre",
+        "modelNamespace": "FirstSenchaAppAndre.model",
+        "baseClass": "Ext.data.Model",
+        "modelFileName": "Schedule",
+        "name": "Schedule",
+        "fields": "name:auto:null"
       }
     }
   }
